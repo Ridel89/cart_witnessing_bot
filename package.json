@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@types/node": "^20.6.5"
+  },
+  "dependencies": {
+    "@types/google-apps-script": "^1.0.71"
+  }
+}

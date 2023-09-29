@@ -66,8 +66,7 @@ https://developers.google.com/apps-script/guides/clasp
 Заходимо в visual studio code і находимо файлік globalVariables.js і задаємо раніше збережені id:
 `telegramBotToken`
 `ssId`
-Задаємо пароль для доступу до бота, змінна password
-`clasp push` і перевіряємо чи змінився код в app script 
+Задаємо пароль для доступу до бота, змінна `password`. Оновлюємо код: `clasp push` і перевіряємо чи змінився код в app script. 
 
 ## Деплоїмо app script
 

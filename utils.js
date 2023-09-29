@@ -133,6 +133,10 @@ function createEmptySchedule(countDays=14, startHour=9, endHour=18){
     }
     row += step + endHour - startHour
   }
+  let maxCols = sheet.getMaxColumns()
+  let maxRows = sheet.getMaxRows()
+  sheet.deleteRows(row, maxRows - row)
+  sheet.deleteColumns(4, maxCols - 4)
 }
 
 function changeFont() {

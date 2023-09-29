@@ -60,7 +60,7 @@ https://docs.google.com/spreadsheets/d/{ssId}/edit#gid=0
 
 Створюємо скрипт в excel документі - `розширення` -> `app script`
 Налаштування проекту (шестерня́) ->
-копіюємо `Ідентифікатор сценарію` `scriptId`, **наприклад** його вигляд схожий на: 8Zuh1gup3Gg63SUiutvx2S7udN0qki0C-p_26nCJMfoL1Hzu9cHThudEY
+копіюємо `Ідентифікатор сценарію` `scriptId`.
 
 ## Клонуємо код з репозиторію gitHub на комп'ютер
 В командному рядку пишемо: git clone https://github.com/Ridel89/cart_witnessing_bot.git або завантажуємо: `<> code` -> `download ZIP`

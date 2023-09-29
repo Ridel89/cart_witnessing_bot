@@ -37,16 +37,16 @@ help - Отримати допомогу
 
 ## Створюємо excel документ
 з посилання на excel документ з браузера копіюємо id
-наприклад:
+**наприклад** посилання може виглядати так:
 https://docs.google.com/spreadsheets/d/1rkGqlYlJsPwJ1GukQ731B9CACwYvhrPEYW-IBa7jk5s/edit#gid=0
 
 зберігаємо і пізніше впишемо в програмний код, id excel документа.
-наприклад:
+**наприклад**:
 `ssId` = 1rkGqlYlJsPwJ1GukQ731B9CACwYvhrPEYW-IBa7jk5s
 
 Створюємо скрипт в excel документі - `розширення` -> `app script`
 Налаштування проекту (шестерня́) ->
-копіюємо `Ідентифікатор сценарію` `scriptId`, його вигляд схожий на: 8Zuh1gup3Gg63SUiutvx2S7udN0qki0C-p_26nCJMfoL1Hzu9cHThudEY
+копіюємо `Ідентифікатор сценарію` `scriptId`, **наприклад** його вигляд схожий на: 8Zuh1gup3Gg63SUiutvx2S7udN0qki0C-p_26nCJMfoL1Hzu9cHThudEY
 
 ## Клонуємо код з репозиторію gitHub на комп'ютер
 В командному рядку пишемо: git clone https://github.com/Ridel89/cart_witnessing_bot.git або завантажуємо: `<> code` -> `download ZIP`
@@ -81,7 +81,7 @@ https://developers.google.com/apps-script/guides/clasp
 `clasp push`
 
 В редакторі Apps Script:
-Ввести в дію -> керування введенням в дію -> іконка олівчика (редагувати) -> версія: нова версія -> ввести в дію -> готово
+`Ввести в дію` -> `керування введенням в дію` -> `іконка олівчика (редагувати)` -> `версія: нова версія` -> `ввести в дію` -> `готово`
 
 ## Вказуємо боту посилання на Apps Script
 В редакторі Apps Script:

@@ -1,5 +1,4 @@
-//DEVELOPMENT
-//r1d2_tst_bot
+
 var telegramBotToken = "..."; // FILL IN YOUR OWN TOKEN
 var telegramUrl = "https://api.telegram.org/bot" + telegramBotToken;
 var webAppUrl = "https://script.google.com/macros/s/.../exec"; // FILL IN YOUR GOOGLE WEB APP ADDRESS

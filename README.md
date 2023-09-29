@@ -52,11 +52,11 @@ help - Отримати допомогу
 ## Створюємо excel документ
 з посилання на excel документ з браузера копіюємо id
 **наприклад** посилання може виглядати так:
-https://docs.google.com/spreadsheets/d/1rkGqlYlJsPwJ1GukQ731B9CACwYvhrPEYW-IBa7jk5s/edit#gid=0
+https://docs.google.com/spreadsheets/d/<ssId>/edit#gid=0
 
 зберігаємо і пізніше впишемо в програмний код, id excel документа.
 **наприклад**:
-`ssId` = 1rkGqlYlJsPwJ1GukQ731B9CACwYvhrPEYW-IBa7jk5s
+`ssId` = <ssId>
 
 Створюємо скрипт в excel документі - `розширення` -> `app script`
 Налаштування проекту (шестерня́) ->

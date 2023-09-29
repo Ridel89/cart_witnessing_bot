@@ -1,14 +1,14 @@
 //DEVELOPMENT
 //r1d2_tst_bot
-var telegramBotToken = "1233518178:AAHsHrFpaWTkSKNbxefyhWWbfBvIZ0T2ay4"; // FILL IN YOUR OWN TOKEN
+var telegramBotToken = "..."; // FILL IN YOUR OWN TOKEN
 var telegramUrl = "https://api.telegram.org/bot" + telegramBotToken;
-var webAppUrl = "https://script.google.com/macros/s/AKfycbwYMoe0361EiiS4fGLwaYspD6ncQ7Lu9oDHrQeVy8j66NVtdNf26cF89-O-OKDuTgOM/exec"; // FILL IN YOUR GOOGLE WEB APP ADDRESS
-var ssId = "1rkGqlYlJsPwJ1GukQ731B9CACwYvhrPEYW-IBa6jk5s"; // FILL IN THE ID OF YOUR SPREADSHEET
+var webAppUrl = "https://script.google.com/macros/s/.../exec"; // FILL IN YOUR GOOGLE WEB APP ADDRESS
+var ssId = "..."; // FILL IN THE ID OF YOUR SPREADSHEET
 var urlSs = `https://docs.google.com/spreadsheets/d/${ssId}/edit?usp=sharing`
 var sheet = SpreadsheetApp.openById(ssId).getSheets()[0]
 var debugSheet = SpreadsheetApp.openById(ssId).getSheets()[1]
 var testSheet = SpreadsheetApp.openById(ssId).getSheets()[3]
-var password = '5783'
+var password = 'password'
 
 var numberOfDays = 14
 var startHour = 9
@@ -42,8 +42,8 @@ var instruction = `${helpIcon} ${aboutMessage}\n\n\
 4. Інформація про допомогу \n натисніть <b>/help</b>\n\n\
 5. Зміна імені \n натисніть <b>/change_name</b>\n\n\
 Ці команди завжди доступні по натисненню на кнопку - Menu.\n\n\
-За допомогою можете звернутися до брата <b>Ігнатченка Іллі, +380 68 174 10 90</b>.`
-var infoMessage = `${infoIcon} Стенд знаходиться за адресою <b>вул. Головна 126а</b>, 1 підїзд код <b>38</b> в кладовці на першому поверсі. Ключ від кладовки в поштовій <b>скринці №6</b>.\n        Дорогі брати та сестри під час повітряної тривоги служіння зі стендом припиняється. Під час тривоги, стенд можна заносити на його постійне місце перебування або перечекати тривогу в <b>ЗОШ №30</b> на <b>вул. Щербанюка 4</b>.`
+За допомогою можете звернутися до брата <b>Павла, +380 88 888 88 88</b>.`
+var infoMessage = `${infoIcon} Стенд знаходиться за адресою <b>вул. назва вул 23</b>, 5 підїзд код <b>38</b> ...`
 var changeNameMessage = (name) => `${yourNameIcon} Вказане вами ім'я - <b>${name}</b>. Бажаєте змінити його?`
 var enterNewName = `${yourNameIcon} Введіть своє нове ім'я. Будьте уважні: в подальшому під цим ім'ям ви будете записуватися на стенд!`
 var nameChanged = (name) => `${yourNameIcon} Ваше нове ім'я - <b>${name}</b>.`

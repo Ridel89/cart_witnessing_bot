@@ -9,7 +9,7 @@
  - доступ до бота по паролю
 
 ## Передумови
-Потрібно мати google еккаунт.  
+Потрібно мати google аккаунт.  
 Потрібно встановити наступні інструменти:
  - git https://git-scm.com/downloads
  - node.js https://nodejs.org/uk
@@ -17,7 +17,7 @@
  - visual studio code https://code.visualstudio.com/
 
 ## Створюємо телеграм бота
-В telegram, заходимо в кореневий батьківський бот:
+В telegram, заходимо в кореневий, батьківський бот:
  https://t.me/BotFather
 
 Викликаємо або вводимо команду
@@ -55,24 +55,24 @@ help - Отримати допомогу
 Відкриваємо документ, в адресному рядку браузера з посилання документа копіюємо id документа.  
 **Наприклад** посилання може виглядати так:  
 https://docs.google.com/spreadsheets/d/{ssId}/edit#gid=0  
-Де {ssId} і є id документа, зберігаємо і пізніше впишемо в програмний код.
-**наприклад**:
+Де {ssId} і є id документа, зберігаємо і пізніше впишемо в програмний код.  
+**Приклад**:
 `ssId` = {ssId}
 
 Створюємо скрипт (Apps Script) в google таблиці документі - `розширення` -> `Apps Script`  
 В редакторі скрипта, зліва на панелі клікаємо: `Налаштування проекту (іконка шестерні)` ->
 копіюємо `Ідентифікатор сценарію` (`scriptId`).
 
-## Клонуємо код з репозиторію gitHub на комп'ютер
-В командному рядку пишемо: git clone https://github.com/Ridel89/cart_witnessing_bot.git або завантажуємо: `<> code` -> `download ZIP`
+## Клонуємо код з репозиторію GitHub на комп'ютер
+В командному рядку або терміналі у вибраній папці, пишемо: `git clone https://github.com/Ridel89/cart_witnessing_bot.git` або завантажуємо код з сайта GitHub і розпаковуємо з архіву: `<> code` -> `download ZIP`
 
-Відкриваємо cклоновану папочку cart_witnessing_bot в visual studio code
-view -> terminal і пишемо в терміналі:
-npm install @google/clasp -g
-`clasp login`
-`clasp clone <scriptId>`
-де `<scriptId>` Ідентифікатор сценарію	
-`clasp push`
+Відкриваємо cклоновану папочку cart_witnessing_bot в терміналі або visual studio code   
+`view` -> `terminal` і пишемо в терміналі:
+
+`npm install @google/clasp -g`
+`clasp login` - залогінитися через google аккаунт  
+`clasp clone <scriptId>` - з'єднати вибраний каталог з Apps Script, де `<scriptId>` Ідентифікатор сценарію	
+`clasp push` - вивантажити всі файли з поточного каталогу в Apps Script
 
 https://developers.google.com/apps-script/guides/clasp
 

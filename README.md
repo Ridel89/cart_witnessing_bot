@@ -64,7 +64,7 @@ https://docs.google.com/spreadsheets/d/{ssId}/edit#gid=0
 копіюємо `Ідентифікатор сценарію` (`scriptId`).
 
 ## Клонуємо код з репозиторію GitHub на комп'ютер
-В командному рядку або терміналі у вибраній папці, пишемо: `git clone https://github.com/Ridel89/cart_witnessing_bot.git` або завантажуємо код з сайта GitHub і розпаковуємо з архіву: `<> code` -> `download ZIP`
+В командному рядку або терміналі у вибраній папці, пишемо: `git clone https://github.com/Ridel89/cart_witnessing_bot.git` або завантажуємо код з сайта GitHub `<> code` -> `download ZIP` і розпаковуємо з архіву: 
 
 Відкриваємо cклоновану папочку cart_witnessing_bot в терміналі або visual studio code   
 `view` -> `terminal` і пишемо в терміналі:

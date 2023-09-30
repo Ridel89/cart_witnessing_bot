@@ -69,7 +69,7 @@ https://docs.google.com/spreadsheets/d/{ssId}/edit#gid=0
 Відкриваємо cклоновану папочку cart_witnessing_bot в терміналі або visual studio code   
 `view` -> `terminal` і пишемо в терміналі:
 
-`npm install @google/clasp -g`
+`npm install @google/clasp -g`  
 `clasp login` - залогінитися через google аккаунт  
 `clasp clone <scriptId>` - з'єднати вибраний каталог з Apps Script, де `<scriptId>` Ідентифікатор сценарію	
 `clasp push` - вивантажити всі файли з поточного каталогу в Apps Script

@@ -76,12 +76,12 @@ https://docs.google.com/spreadsheets/d/{ssId}/edit#gid=0
 
 https://developers.google.com/apps-script/guides/clasp
 
-Оновлюємо в браузері сторінку з app script і файли які були в папочці на компютері повинні підтягнутися в app script
+Оновлюємо в браузері сторінку з app script і файли які були в папочці на компютері повинні підтягнутися в Apps Script.
 
-Заходимо в visual studio code і находимо файлік globalVariables.js і задаємо раніше збережені id:
-`telegramBotToken`
-`ssId`
-Задаємо пароль для доступу до бота, змінна `password`. Оновлюємо код: `clasp push` і перевіряємо чи змінився код в app script. 
+Заходимо в visual studio code і находимо файлик `globalVariables.js`. В ньому вписуємо раніше збережені id:
+`telegramBotToken` - токен телеграм бота  
+`ssId` - id документа  
+Задаємо пароль для доступу до бота, змінна `password`. Оновлюємо код: `clasp push` і перевіряємо чи змінився код в Apps Script, оновивши браузер. 
 
 ## Деплоїмо app script
  `Ввести в дію` -> `керування введенням в дію` -> `створити версію для введення в дію`

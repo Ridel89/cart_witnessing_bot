@@ -5,8 +5,8 @@ var webAppUrl = "https://script.google.com/macros/s/.../exec"; // FILL IN YOUR G
 var ssId = "..."; // FILL IN THE ID OF YOUR SPREADSHEET
 var urlSs = `https://docs.google.com/spreadsheets/d/${ssId}/edit?usp=sharing`
 var sheet = SpreadsheetApp.openById(ssId).getSheets()[0]
-var debugSheet = SpreadsheetApp.openById(ssId).getSheets()[1]
-var testSheet = SpreadsheetApp.openById(ssId).getSheets()[3]
+//var debugSheet = SpreadsheetApp.openById(ssId).getSheets()[1]
+//var testSheet = SpreadsheetApp.openById(ssId).getSheets()[3]
 var password = 'password'
 
 var numberOfDays = 14

@@ -63,6 +63,8 @@ https://docs.google.com/spreadsheets/d/{ssId}/edit#gid=0
 В редакторі скрипта, зліва на панелі клікаємо: `Налаштування проекту (іконка шестерні)` ->
 копіюємо `Ідентифікатор сценарію` (`scriptId`).
 
+Таким чином ми зібрали 3 ідентифікатори - telegramBotToken, ssId, scriptId.
+
 ## Клонуємо код з репозиторію GitHub на комп'ютер
 В командному рядку або терміналі у вибраній папці, пишемо: `git clone https://github.com/Ridel89/cart_witnessing_bot.git` або завантажуємо код з сайта GitHub `<> code` -> `download ZIP` і розпаковуємо з архіву: 
 
@@ -70,11 +72,17 @@ https://docs.google.com/spreadsheets/d/{ssId}/edit#gid=0
 `view` -> `terminal` і пишемо в терміналі:
 
 `npm install @google/clasp -g`  
+
+:warning: `clasp` - це інструмент який дозволяє синхронізовувати код з вашого компютера з Apps Script редактором.
+Наприклад якщо ви змінили код на вашому компютері, то для його вивантаження в Apps Script редактор, викликаєте команду команду `clasp push`.
+Якщо ви змінили код в Apps Script редакторі то для того, щоб ці зміни завантажилися на ваш компютер ви викликаєте команду `clasp pull`.
+Більше про clasp: https://developers.google.com/apps-script/guides/clasp
+
 `clasp login` - залогінитися через google аккаунт  
 `clasp clone <scriptId>` - з'єднати вибраний каталог з Apps Script, де `<scriptId>` Ідентифікатор сценарію	
 `clasp push` - вивантажити всі файли з поточного каталогу в Apps Script
 
-https://developers.google.com/apps-script/guides/clasp
+
 
 Оновлюємо в браузері сторінку з app script і файли які були в папочці на компютері повинні підтягнутися в Apps Script.
 

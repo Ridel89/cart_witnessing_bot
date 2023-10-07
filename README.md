@@ -81,7 +81,7 @@ https://docs.google.com/spreadsheets/d/{ssId}/edit#gid=0
 
 `npm install @google/clasp -g`  
 
-:warning: `clasp` - це інструмент який дозволяє синхронізовувати код з вашого компютера з Apps Script редактором.
+>:warning: `clasp` - це інструмент який дозволяє синхронізовувати код з вашого компютера з Apps Script редактором.
 Наприклад якщо ви змінили код на вашому компютері, то для його вивантаження в Apps Script редактор, викликаєте команду команду `clasp push`.
 Якщо ви змінили код в Apps Script редакторі то для того, щоб ці зміни завантажилися на ваш компютер ви викликаєте команду `clasp pull`.
 Більше про clasp: https://developers.google.com/apps-script/guides/clasp

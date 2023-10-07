@@ -4,7 +4,7 @@
 ![alt text](https://github.com/Ridel89/cart_witnessing_bot/blob/72da333175e3bf38d1cc0ba2ef5925fcb902e906/images/screen%201.jpg)
 ![alt text](https://github.com/Ridel89/cart_witnessing_bot/blob/72da333175e3bf38d1cc0ba2ef5925fcb902e906/images/screen%202.jpg)
 ![alt text](https://github.com/Ridel89/cart_witnessing_bot/blob/aa17c61c37140ee61ed57c146840d24747ce0664/images/screen%203.jpg)
-![alt text](https://github.com/Ridel89/cart_witnessing_bot/blob/6511b0a70d8d6646113f8a395a13fe61911d8e6b/images/screen%204.jpg)
+![alt text](https://github.com/Ridel89/cart_witnessing_bot/blob/67f6ae23d47327dea1ccad11a6bc70cc095476e8/images/screen%204.jpg)
 
 ## Функції
  - записатися

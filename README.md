@@ -2,6 +2,7 @@
 Це телеграм бот який робить бронювання на служіння зі стендом, на вибраний день та годину, в google таблиці.
 
 ![alt text](https://github.com/Ridel89/cart_witnessing_bot/blob/4d840f5024734345bf5b80b4659561a794d65b38/images/screen%201.jpg)     ![alt text](https://github.com/Ridel89/cart_witnessing_bot/blob/aa17c61c37140ee61ed57c146840d24747ce0664/images/screen%202.jpg)![alt text](https://github.com/Ridel89/cart_witnessing_bot/blob/aa17c61c37140ee61ed57c146840d24747ce0664/images/screen%203.jpg)
+![alt text](https://github.com/Ridel89/cart_witnessing_bot/blob/6511b0a70d8d6646113f8a395a13fe61911d8e6b/images/screen%204.jpg)
 
 ## Функції
  - записатися

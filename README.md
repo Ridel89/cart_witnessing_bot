@@ -1,5 +1,7 @@
 # Cart witnessing bot
 Це телеграм бот який робить бронювання на служіння зі стендом, на вибраний день та годину, в google таблиці.
+![alt text](https://github.com/Ridel89/cart_witnessing_bot/blob/2f773ae4090ca1e22da0ddf7d07dfadb44abfa9d/images/screen%201.jpg?raw=true)
+
 ## Функції
  - записатися
  - скасувати запис

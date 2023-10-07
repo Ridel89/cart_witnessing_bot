@@ -78,13 +78,12 @@ https://docs.google.com/spreadsheets/d/{ssId}/edit#gid=0
 Якщо ви змінили код в Apps Script редакторі то для того, щоб ці зміни завантажилися на ваш компютер ви викликаєте команду `clasp pull`.
 Більше про clasp: https://developers.google.com/apps-script/guides/clasp
 
-`clasp login` - залогінитися через google аккаунт  
+`clasp login` - залогінитися через google аккаунт і надайте `clasp`, дозвіл до вашого google аккаунта  
 `clasp clone <scriptId>` - з'єднати вибраний каталог з Apps Script, де `<scriptId>` Ідентифікатор сценарію	
-`clasp push` - вивантажити всі файли з поточного каталогу в Apps Script
+Перед тим як вивантажити зміни в Apps Script потрібно увімкнути `API скрипту додатків Google Apps` перейдіть по посиланню: https://script.google.com/home/usersettings `API скрипту додатків Google Apps` -> `Увімкнути`
+`clasp push` - вивантажити всі файли з поточного каталогу в Apps Script  
 
-
-
-Оновлюємо в браузері сторінку з app script і файли які були в папочці на компютері повинні підтягнутися в Apps Script.
+Оновлюємо в браузері сторінку з app script і файли які були в папочці на компютері повинні підтягнутися в Apps Script. :warning: Якщо ви не увімкнули `API скрипту додатків Google Apps`, то в консолі виведеться про це повідомлення і посилання де знаходиться ця опція.
 
 Заходимо в visual studio code і находимо файлик `globalVariables.js`. В ньому вписуємо раніше збережені id:  
 `telegramBotToken` - токен телеграм бота  
@@ -98,7 +97,8 @@ https://docs.google.com/spreadsheets/d/{ssId}/edit#gid=0
 `тип` -> `веб додаток` -> `хто має доступ` -> `всі` -> кнопка `ввести в дію`  
 кнопка `надати доступ` -> вибираємо аккаунт -> `advanced` -> клікаємо на `go to назва проекта (unsafe)` -> `allow (дозволити)`. У вікні копіюємо URL-адресу веб додатку
 
-У visual studio знаходимо файл `globalVariable.js` і прописуємо URL-адресу веб додатку в змінну `webAppUrl`. Вивантажуємо зміни в Apps Script `clasp push`.
+Виконайте `clasp pull` - для завантаження прихованого файлу проекту. 
+У visual studio знаходимо файл `globalVariable.js` і прописуємо URL-адресу веб додатку в змінну `webAppUrl`. Вивантажуємо зміни в Apps Script `clasp push`. :warning: Якщо з'явиться повідомлення `Manifest file has been updated. Do you want to push and overwrite? (y/N)`, то введіть `y` і нажміть `enter`.
 
 Оновлюємо редактор Apps Script, перевіряємо чи зміни надійшли і знову деплоїмо з новими змінами:
 `Ввести в дію` -> `керування введенням в дію` -> `іконка олівчика (редагувати)` -> `версія: нова версія` -> `ввести в дію` -> `готово`

@@ -1,7 +1,7 @@
 
 var telegramBotToken = "..."; // FILL IN YOUR OWN TOKEN
 var telegramUrl = "https://api.telegram.org/bot" + telegramBotToken;
-var webAppUrl = "https://script.google.com/macros/s/.../exec"; // FILL IN YOUR GOOGLE WEB APP ADDRESS
+var webAppUrl = "..."; // example: "https://script.google.com/macros/s/.../exec", FILL IN YOUR GOOGLE WEB APP ADDRESS
 var ssId = "..."; // FILL IN THE ID OF YOUR SPREADSHEET
 var urlSs = `https://docs.google.com/spreadsheets/d/${ssId}/edit?usp=sharing`
 var sheet = SpreadsheetApp.openById(ssId).getSheets()[0]

@@ -89,7 +89,7 @@ https://docs.google.com/spreadsheets/d/{ssId}/edit#gid=0
 
 `clasp login` - залогінитися через google аккаунт і надайте `clasp`, дозвіл до вашого google аккаунта  
 `clasp clone <scriptId>` - з'єднати вибраний каталог з Apps Script, де `<scriptId>` Ідентифікатор сценарію.	 
-Перед тим як вивантажити зміни в Apps Script потрібно увімкнути `API скрипту додатків Google Apps` перейдіть за посиланням: https://script.google.com/home/usersettings `API скрипту додатків Google Apps` -> `Увімкнути`  
+>:warning: Перед тим як вивантажити зміни в Apps Script потрібно увімкнути `API скрипту додатків Google Apps` перейдіть за посиланням: https://script.google.com/home/usersettings `API скрипту додатків Google Apps` -> `Увімкнути`  
 `clasp push` - вивантажити всі файли з поточного каталогу в Apps Script  
 
 Оновлюємо в браузері сторінку з app script і файли які були в папочці на компютері повинні підтягнутися в Apps Script. 

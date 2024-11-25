@@ -69,12 +69,9 @@ function shiftStrDate(strDate, dayShift){
 function findCellCoords(text) {
   let dataRange = sheet.getDataRange();
   let values = dataRange.getDisplayValues();
-  //console.log(values)
   for (let i = 0; i < values.length; i++) {
     for (let j = 0; j < values[i].length; j++) {
       let val = String(values[i][j]).toLowerCase()      
-      //console.log(typeof val)
-      //console.log(val)
       if ( val.includes(text.toLowerCase()) ) {
         console.log(i, j)
         return [i, j]
@@ -117,14 +114,24 @@ function dataShifter(){
   setAllCellCoordsWithText()
 }
 
-function createEmptySchedule(countDays=14, startHour=9, endHour=18){
+function createEmptySchedule(){
   let step = 2
   let row = 2
   let backColor = '#fce5cd'
-  let days = getDays(countDays)
-  for (let i = 0; i < countDays; i++){
+  let days = getDays(numberOfDays)
+  sheet.clear()
+  let maxCols = sheet.getMaxColumns()
+  let maxRows = sheet.getMaxRows()
+  if (maxCols < (countProclaimers + 1)){
+    sheet.insertColumnsAfter(maxCols, countProclaimers + 1 - maxCols)
+  }
+  let needRows = numberOfDays * (step + endHour - startHour) + 2
+  if (maxRows < needRows){
+    sheet.insertRowsAfter(maxRows, needRows - maxRows)
+  }
+  for (let i = 0; i < numberOfDays; i++){
     sheet.getRange(row, 1).setBackground(backColor)
-    sheet.getRange(row, 2, 1, 2).merge().setBackground(backColor)
+    sheet.getRange(row, 2, 1, countProclaimers).merge().setBackground(backColor)
     setFormattingText(sheet.getRange(row, 2), days[i], 'center', 'bold')
     for (let j = startHour, k = 1; j < endHour; j++, k++){
       let rng = sheet.getRange(row + k, 1)
@@ -133,10 +140,13 @@ function createEmptySchedule(countDays=14, startHour=9, endHour=18){
     }
     row += step + endHour - startHour
   }
-  let maxCols = sheet.getMaxColumns()
-  let maxRows = sheet.getMaxRows()
-  sheet.deleteRows(row, maxRows - row)
-  sheet.deleteColumns(4, maxCols - 4)
+  clearScriptStore()
+  if (maxRows > row){
+    sheet.deleteRows(row, maxRows - row)
+  }
+  if (maxCols > (countProclaimers + 1)){
+    sheet.deleteColumns(countProclaimers + 2, maxCols - countProclaimers - 1)
+  }
 }
 
 function changeFont() {

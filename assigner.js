@@ -14,6 +14,7 @@ function setFormattingText(range, text, alignment='center', weight='normal'){
   range.setFontSize(14);
   range.setFontWeight(weight);
   range.setHorizontalAlignment(alignment);
+  range.setNumberFormat("@");
   return range.setValue(text)
 }
 

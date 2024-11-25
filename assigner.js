@@ -18,6 +18,15 @@ function setFormattingText(range, text, alignment='center', weight='normal'){
   return range.setValue(text)
 }
 
+function setFormattingDate(range, text, alignment='center', weight='normal'){
+  range.setFontFamily("Arial");
+  range.setFontSize(14);
+  range.setFontWeight(weight);
+  range.setHorizontalAlignment(alignment);
+  range.setNumberFormat("dddd, dd.mm.yy");
+  return range.setValue(text)
+}
+
 function assignUserToSchedule(id, messageId) {
 
   let coords = getValueFromStore(id, 'coords')
